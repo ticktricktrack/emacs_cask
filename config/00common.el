@@ -157,3 +157,11 @@
 (add-hook 'after-init-hook (lambda ()
   (when (fboundp 'auto-dim-other-buffers-mode)
     (auto-dim-other-buffers-mode t))))
+
+;; visual regexp
+(add-to-list 'load-path "folder-in-which-visual-regexp-files-are-in/") ;; if the files are not already in the load path
+(require 'visual-regexp)
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "C-c q") 'vr/query-replace)
+;; if you use multiple-cursors, this is for you:
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
