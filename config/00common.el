@@ -5,6 +5,11 @@
 
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 
+;; disable annoying auto indent mode
+(electric-indent-mode -1)
+(global-aggressive-indent-mode -1)
+(add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
+
 ;; reduce annoying prompts
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq ido-create-new-buffer 'always)
