@@ -140,11 +140,6 @@
 ;; autocomplete
 (global-auto-complete-mode)
 
-;; indent
-(global-aggressive-indent-mode 1)
-(add-to-list 'aggressive-indent-excluded-modes 'haml-mode)
-(add-to-list 'aggressive-indent-excluded-modes 'ruby-mode)
-
 ;; ace jump
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (define-key global-map (kbd "C-c C-SPC") 'ace-jump-line-mode)
