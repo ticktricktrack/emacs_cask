@@ -9,5 +9,8 @@
 ;; (define-key global-map (kbd "C-c h") 'ruby-toggle-hash-syntax)
 
 ;; home end
-(define-key global-map (kbd "M-p") 'beginning-of-buffer)
-(define-key global-map (kbd "M-n") 'end-of-buffer)
+(define-key global-map (kbd "M-p") 'backward-paragraph)
+(define-key global-map (kbd "M-n") 'forward-paragraph)
+
+;; next window
+(define-key global-map (kbd "C-o") 'previous-multiframe-window)
