@@ -1,3 +1,4 @@
+;; paragraph jumping
 (define-key input-decode-map "\e\eOA" [(meta up)])
 (define-key input-decode-map "\e\eOB" [(meta down)])
 
