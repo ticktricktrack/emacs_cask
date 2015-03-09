@@ -71,7 +71,7 @@
 (global-undo-tree-mode)
 
 ;; theme
-(load-theme 'zenburn t)
+(load-theme 'lush t)
 
 ;;js2
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
