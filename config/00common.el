@@ -147,3 +147,13 @@
 ;; rspec
 (eval-after-load 'rspec-mode
   '(rspec-install-snippets))
+
+
+;; smart-mode-line
+(require 'smart-mode-line)
+(setq sml/no-confirm-load-theme t)
+(sml/setup)
+
+(add-hook 'after-init-hook (lambda ()
+  (when (fboundp 'auto-dim-other-buffers-mode)
+    (auto-dim-other-buffers-mode t))))
