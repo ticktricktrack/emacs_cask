@@ -5,6 +5,8 @@
 
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 
+(global-auto-revert-mode 1)
+
 ;; disable annoying auto indent mode
 (electric-indent-mode -1)
 (global-aggressive-indent-mode -1)
@@ -147,6 +149,7 @@
 ;; rspec
 (eval-after-load 'rspec-mode
   '(rspec-install-snippets))
+;; (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
 
 ;; smart-mode-line
@@ -161,3 +164,19 @@
 ;; visual regexp
 (add-to-list 'load-path "folder-in-which-visual-regexp-files-are-in/") ;; if the files are not already in the load path
 (require 'visual-regexp)
+
+;; linum
+(global-linum-mode 1)
+(setq linum-format "%4d \u2502 ")
+
+;; shut up magit
+(setq magit-last-seen-setup-instructions "1.4.0")
+(setq magit-push-always-verify nil)
+
+;; indent css with 2 spaces
+(setq css-indent-offset 2)
+
+
+;; split windows horizontally
+(setq split-height-threshold nil)
+(setq split-width-threshold 0)

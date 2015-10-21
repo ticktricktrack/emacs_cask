@@ -1,4 +1,4 @@
-(require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
+(require 'cask "/usr/local/Cellar/cask/0.7.2_1/cask.el")
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)
@@ -23,3 +23,4 @@
  ;; If there is more than one, they won't work right.
  '(my-carriage-return-face ((((class color)) (:background "firebrick4"))) t)
  '(my-tab-face ((((class color)) (:background "firebrick4"))) t))
+(put 'upcase-region 'disabled nil)
