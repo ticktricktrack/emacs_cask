@@ -172,6 +172,7 @@
 ;; shut up magit
 (setq magit-last-seen-setup-instructions "1.4.0")
 (setq magit-push-always-verify nil)
+(setq git-commit-summary-max-length 120)
 
 ;; indent css with 2 spaces
 (setq css-indent-offset 2)
